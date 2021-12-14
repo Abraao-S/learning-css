@@ -1,0 +1,29 @@
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/z-index */
+
+/* The z-index CSS property sets the z-order of a positioned element and its descendants or flex items. Overlapping elements with a larger z-index cover those with a smaller one. */
+
+/* Tip: from the point of looking to the page, it works like a stack! The first element (the one behind all others) would be z-index: 1, then the element in front of it would be z-index: 2, etc */
+
+
+/* Syntax */
+
+/* Keyword value */
+* {
+    z-index: auto; /* The box does not establish a new local stacking context. The stack level of the generated box in the current stacking context is 0. */
+}
+
+/* <integer> values */
+* {
+    z-index: 0;
+    z-index: 3;
+    z-index: 289;
+    z-index: -1; /* Negative values to lower the priority */
+}
+
+/* Global values */
+* {
+    z-index: inherit;
+    z-index: initial;
+    z-index: revert;
+    z-index: unset;
+}
